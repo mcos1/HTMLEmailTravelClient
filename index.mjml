@@ -2,48 +2,63 @@
   <mj-head>
     <mj-preview>Experience life in Manasquan</mj-preview>
     <mj-title>You could win a trip to Manasquan!</mj-title>
-    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"></mj-font>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"></mj-font>
     <mj-attributes>
-      <mj-all font-family="Montserrat, Arial, sans-serif"></mj-all>
+      <mj-all font-family="Roboto, Arial, sans-serif"></mj-all>
       <mj-text align="center" color="#212121" font-weight="300" font-size="14px" line-height="20px" />
       <mj-section background-color="#fff" />
     </mj-attributes>
     <mj-style>
-      .pointer-button { cursor: pointer !important; } 
+      .pointer-button { cursor: pointer !important; }
+      .rounded-top {
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        overflow: hidden !important;
+      }
+      .rounded-bottom {
+      	border-bottom-left-radius: 10px !important;
+      	border-bottom-right-radius: 10px !important;
+      	overflow: hidden !important;
+      }
+      .outlined-text {
+        text-shadow: 
+          -1px -1px 0 #ffffff,  
+           1px -1px 0 #ffffff,
+           -1px  1px 0 #ffffff,
+            1px  1px 0 #ffffff;
+      }
     </mj-style>
   </mj-head>
   <mj-body width="608px">
-    
-    <mj-section>
+    	<mj-section css-class="rounded-top" background-color="#F8F8F8">
       <mj-column>
-        <mj-text font-size="20px" font-weight="500"> JERSEY SHORE TRAVEL TIPS </mj-text>
+        <mj-text font-size="20px" font-weight="800"> JERSEY SHORE TRAVEL TIPS		 </mj-text>
       </mj-column>
     </mj-section>
-    
     <mj-section background-url="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Manasquan_Inlet_aerial_photograph_2022.jpg/640px-Manasquan_Inlet_aerial_photograph_2022.jpg" background-size="cover" background-repeat="no-repeat" padding="100px 0">
       <mj-column>
-        <mj-text color="#1803fc" font-size="36px" line-height="40px" font-weight="500"> Experience Manasquan's Beautiful Beaches </mj-text>
+        <mj-text color="#1803fc" font-size="36px" line-height="40px" font-weight="500" css-class="outlined-text"> Experience Manasquan's Beautiful Beaches </mj-text>
         <mj-button css-class="pointer-button" border-radius="8px" background-color="rgba(8, 143, 143, 0.5)" href="https://www.google.com/">FIND OUT IF YOU COULD WIN</mj-button>
       </mj-column>
     </mj-section>
     
-    <mj-section>
+    <mj-section background-color="#F8F8F8">
       <mj-column>
-        <mj-text font-size="22px" font-weight="400"> You could win a trip to Manasquan! </mj-text>
-        <mj-text> The team here at Shore Travels have been humbled by the number of members who have pledged support to our website. As a big thank you, we are giving away a trip to Manasquan in New Jersey.<br></br> If you're not a patron, you can become one today and still qualify! Plus, we'll be having more giveaways for our patrons over the next few months to destinations like Wildwood, Long Beach Island, and Sea Bright all on the coast of New Jersey! </mj-text>
-        <mj-button border-radius="8px" background-color="#d50000" href="https://www.google.com/">BECOME A PATRON TODAY</mj-button>
+        <mj-text font-size="22px" font-weight="600" > You could win a trip to Manasquan! </mj-text>
+        <mj-text font-weight="500"> The team here at Shore Travels have been humbled by the number of members who have pledged support to our website. As a big thank you, we are giving away a trip to Manasquan in New Jersey.<br></br> If you're not a patron, you can become one today and still qualify! Plus, we'll be having more giveaways for our patrons over the next few months to destinations like Wildwood, Long Beach Island, and Sea Bright all on the coast of New Jersey! </mj-text>
+        <mj-button border-radius="8px" background-color="#d50000" font-weight="500" href="https://www.google.com/">BECOME A PATRON TODAY</mj-button>
       </mj-column>
     </mj-section>
     
-    <mj-section background-color="#f6f6f6" border-radius="8px">
+    <mj-section background-color="#F8F8F8">
       <mj-column>
       	<mj-image border-radius="8px" width="200px" alt="Manasquans residential area" src="https://www.jerseyhousehunt.com/wp-content/uploads/2023/01/Manasquan-Inlet-Homes.jpg"></mj-image>
       </mj-column>
       <mj-column>
-      	<mj-text font-size="20px" font-weight="400">
+      	<mj-text font-size="20px" font-weight="600">
         	Manasquan Travel Tips
         </mj-text>
-        <mj-text>
+        <mj-text font-weight="500">
         	Traveling to Manasquan soon? We've got you covered with the most popular tips and most common questions answered by the Shore Travels community.
         </mj-text>
         <mj-text>
@@ -52,11 +67,20 @@
       </mj-column>
     </mj-section>
     
+     <!-- Line Break -->
+      <mj-section background-color="#F8F8F8">
+        <mj-column>
+      		<mj-divider border-color="#888888"
+                border-width="2px"
+                width="80%" />
+         	</mj-column>
+      </mj-section>
+    
     <!-- Footer -->
-    <mj-section>
+    <mj-section background-color="#F8F8F8" css-class="rounded-bottom">
       <mj-column>
       	<mj-text font-size="12px" line-height="12px">Jersey Shore Travel<br></br>123 abc Street<br></br></mj-text>
-        <mj-text font-size="10px" line-height="12px">You're receiving this email because you are subscribed to the Shore Travels monthly newsletter<br></br>If you'd prefer not to receive updates, you can <a href="https://www.google.com/" style="color: #212121;">unsubscribe</a>.<br></br></mj-text>
+        <mj-text font-size="10px" line-height="12px" letter-spacing="1px">You're receiving this email because you are subscribed to the Shore Travels monthly newsletter<br></br>If you'd prefer not to receive updates, you can <a href="https://www.google.com/" style="color: #212121;">unsubscribe</a>.<br></br></mj-text>
       </mj-column>
     </mj-section>
   </mj-body>
